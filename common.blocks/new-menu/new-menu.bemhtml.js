@@ -6,8 +6,14 @@ block('new-menu')(
 			content: [
 				{
 					elem: 'logo',
-					tag: 'a',
-					attrs: { href: '/index.html' }
+					content: [
+						{
+						block: 'text',
+                        attrs: { style: 'font-family: PT Mono' },
+                        mods: { size: 'xxl', view: 'primary', },
+						content: 'Питомник Зуриона',
+						}
+					]
 				},
 				{
 					elem: 'nav',

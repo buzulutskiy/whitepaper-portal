@@ -1,0 +1,59 @@
+.menu-zuriona {
+	height: 75px;
+	background: var(--color-bg-default);
+	box-sizing: border-box;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    z-index: 100;
+
+    &__container {
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: block;
+        align-items: baseline;
+        flex-flow: row nowrap;
+    }   
+    &__nav {
+		display: flex;
+		flex-flow: row nowrap;
+        align-items: baseline;
+    
+    }
+    
+    &__item {
+        position: relative;
+        margin-left: var(--space-xxl);
+        
+        
+        &_view {
+			&_link {
+				display: block;
+				text-decoration: none;
+                transition: color .15s;
+                border-bottom:1px solid #B3B3B3;
+                &:hover {
+                    color: var(--color-typo-disable);
+                    border-bottom:1px solid #FFFFFF;
+                    cursor: default;
+                }
+			}
+           
+			&_active {
+				cursor: default;
+                color: var(--color-typo-disable);
+			}
+        }
+    }
+    
+    &__phone {
+        position: relative;
+		margin-left: var(--space-xxxl);
+    }
+}
