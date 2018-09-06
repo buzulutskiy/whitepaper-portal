@@ -25,26 +25,41 @@ module.exports = {
 		}
 	],
 	content: [
-    {
-        block: 'tpl-layout',
-        content: [
-            {
-                block: 'menu-zuriona',
-			},
-			{
-				block: 'headline',
-				attrs: { style: 'height: 300px' },
+		{
+			block: 'tpl-layout',
+			attrs: { style: 'background: #EDF3F1' },   
+			
+			content: [
+				{
+						block: 'menu-zuriona',
+						attrs: { style: 'position: relative' },      
 
-				content: [
-					{
-						block:
-						block: 'text',
-                        mods: { size: 'xxl', view: 'primary', align: 'center' },
-                        content: 'В нашем питомнике растут щенки от прекрасной пары пиренейских горных собак',
-					}
-				]
-			}
-        ]
-    }
-    ]
+				},
+				{
+					elem: 'section',
+					content: [
+
+						{
+							elem: 'container',
+							attrs: {style:'padding: 64px 0; '},
+							elemMods: { size: 'xs', align: 'center' },
+							content: [
+								{
+									block: 'text',
+									mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'semibold' },
+									
+									content: 'В нашем питомнике растут щенки от прекрасной пары пиренейских горных собак',
+								}
+							]
+							
+						}
+
+					]
+
+				}
+			]
+		}
+
+	]
+
 };
