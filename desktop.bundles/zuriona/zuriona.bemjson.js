@@ -29,15 +29,21 @@ module.exports = {
         block: 'tpl-layout',
         content: [
             {
-                elem: 'section',
-                content:
-                [ 
-                    {
-                        block: 'menu-zuriona',
-                    }
-                ]
-                
-            }
+                block: 'menu-zuriona',
+			},
+			{
+				block: 'headline',
+				attrs: { style: 'height: 300px' },
+
+				content: [
+					{
+						block:
+						block: 'text',
+                        mods: { size: 'xxl', view: 'primary', align: 'center' },
+                        content: 'В нашем питомнике растут щенки от прекрасной пары пиренейских горных собак',
+					}
+				]
+			}
         ]
     }
     ]
