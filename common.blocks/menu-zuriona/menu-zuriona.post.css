@@ -1,6 +1,5 @@
 .menu-zuriona {
 	height: 75px;
-	background: var(--color-bg-default);
 	box-sizing: border-box;
 	position: fixed;
 	width: 100%;
@@ -44,16 +43,6 @@
                     cursor: default;
                 }
 			}
-           
-			&_active {
-				cursor: default;
-                color: var(--color-typo-disable);
-			}
         }
-    }
-    
-    &__phone {
-        position: relative;
-		margin-left: var(--space-xxxl);
     }
 }

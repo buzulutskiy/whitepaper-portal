@@ -13,16 +13,30 @@ module.exports = {
 		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
 		{ elem: 'js', url: 'zuriona.min.js' }
 	],
-	mix: {
-		block: 'theme',
-        mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-	},
+	mods: { theme: 'islands' },
+	mix: [
+		{
+			block: 'theme',
+			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+		},
+		{
+			block: 'component',
+			mods: { whitepaper: 'default' }
+		}
+	],
 	content: [
     {
         block: 'tpl-layout',
         content: [
             {
-                block: 'menu-zuriona',
+                elem: 'section',
+                content:
+                [ 
+                    {
+                        block: 'menu-zuriona',
+                    }
+                ]
+                
             }
         ]
     }
