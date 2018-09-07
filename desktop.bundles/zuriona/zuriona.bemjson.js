@@ -9,8 +9,6 @@ module.exports = {
 		{ elem: 'css', url: 'zuriona.min.css' }
 	],
 	scripts: [
-		{ elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
-		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
 		{ elem: 'js', url: 'zuriona.min.js' }
 	],
 	mods: { theme: 'islands' },
@@ -27,36 +25,51 @@ module.exports = {
 	content: [
 		{
 			block: 'tpl-layout',
-			attrs: { style: 'background: #EDF3F1' },   
-			
+			attrs: { style: 'background: #EDF3F1' },
+
 			content: [
 				{
-						block: 'menu-zuriona',
-						attrs: { style: 'position: relative' },      
-
+					block: 'menu-zuriona',
+					attrs: { style: 'position: relative' },
 				},
 				{
 					elem: 'section',
 					content: [
-
 						{
 							elem: 'container',
-							attrs: {style:'padding: 64px 0; '},
+							attrs: { style: 'padding: 64px 0; ' },
 							elemMods: { size: 'xs', align: 'center' },
 							content: [
 								{
 									block: 'text',
 									mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'semibold' },
-									
 									content: 'В нашем питомнике растут щенки от прекрасной пары пиренейских горных собак',
 								}
 							]
-							
 						}
-
 					]
-
-				}
+				},
+				{
+					elem: 'section',
+					content: [
+						{
+							elem: 'container',
+							elemMods: {align: 'center'},
+							content: [
+								{
+									block: 'adult-card',
+									content: {
+										elem: 'image',
+									},
+									{
+									block: 'text'
+									content
+									}
+								}
+								]
+						}
+					]
+				}	
 			]
 		}
 

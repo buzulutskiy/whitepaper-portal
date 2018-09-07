@@ -1,0 +1,14 @@
+.adult-card {
+	height: 420px;
+	width: 220px;
+    overflow: hidden;
+    border: 1px solid #B3B3B3;
+
+    &__image {
+    height: 220px;
+    width: 100%;
+    border: 1px solid #B3B3B3;
+    }
+
+}
+
