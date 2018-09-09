@@ -2,7 +2,7 @@ block('menu-zuriona')(
     content()(function () {
         return {
             elem: 'container',
-            mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }, },
+            mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 's', align: 'center' }, },
             content: [
                 {
                     elem: 'logo',
