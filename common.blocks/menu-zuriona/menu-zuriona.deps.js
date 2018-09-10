@@ -8,7 +8,7 @@
 			{
 				block: 'tpl-layout',
 				elem: 'container',
-				mods: { size: 'm', align: 'center' }
+				mods: { size: ['m', 's'], align: 'center' }
 			},
 			{
 				block: 'pt-icon-plus',

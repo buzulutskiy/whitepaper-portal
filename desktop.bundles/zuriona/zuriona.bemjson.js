@@ -301,140 +301,80 @@ module.exports = {
 		},
 
 		// Статьи
+		
 		{
 			block: 'tpl-layout',
-			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' }},
 			content: [
 				{
 					elem: 'section',
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
-							elemMods: { size: 's', align: 'center' },
-							
+							elemMods: { align: 'center' },
+							attrs: {
+								'style': 'width: 1008px;'
+							},
 							content: [
 								{
 									block: 'tpl-grid',
-									mods: { columns: '12', 'col-gap': 'third', 'row-gap': 'full' },
+									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
 									content: [
-										{ elem: 'fraction',
-											elemMods: {col:'6'},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-											] },
-										{ elem: 'fraction',
-										elemMods: {col:'6'},
-											content: [
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-											]
-										}]
-								},
-								{
-									block: 'tpl-grid',
-									mods: { columns: '12', 'col-gap': 'third', 'row-gap': 'full' },
-									content: [
-										{ elem: 'fraction',
-											elemMods: {col:'4'},
-											content: [
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-											] },
-										{ elem: 'fraction',
-										elemMods: {col:'4'},
-											content: [
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-											]
-										},
-										{ elem: 'fraction',
-										elemMods: {col:'4'},
-											content: [
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-											]
-										}
-									
-									
-									
-									]
-								},
+													block: 'article-preview',
+													mix: [
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'center'},
+																			content: 'История породы'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm', align: 'center'},
+																			content: 'Где она была выведена и почему была королевской собакой'
+																		},
 								
-								{
-									block: 'text',
-									mods: { size: 'l', view: 'primary', align:'center'},
-									content: 'Все статьи'
-								}
-
-							]
-						},
-						{
-						elem: 'section',
-						content:[
-							{
-								elem: 'container',
-								elemMods: { size: 's', align: 'center' },
-								content:[
-									{
-										block: 'tpl-grid',
-									mods: { columns: '12', 'col-gap': 'third', 'row-gap': 'full' },
-									content:[
-										{
-											elem: 'fraction',
-											elemMods: {col:'3'},
-											content:[
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+															url: 'https://pp.userapi.com/c846420/v846420096/e716c/UMHF3EvK7ww.jpg'
+														}
+													]
 												}
 
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: {col:'3'},
-											content:[
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: {col:'3'},
-											content:[
-												{
-													block: 'news-card',
-													mix: {block:'pt-card'}
-												}
-
+												
 											]
 										}
 									]
-										
-									
-									}
+								}
 							]
-							}
-						]
+
 						}
 					]
 				}
 			]
 		}
+
 	]
 
 
