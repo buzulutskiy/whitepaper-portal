@@ -57,71 +57,77 @@ module.exports = {
 							elemMods: { size: 'm', align: 'center' },
 							content: [
 								{
-									block: 'pyrenees',
-									content: [
+									elem: 'content',
+									attrs: {style:'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);'},
+									content:[
 										{
-											elem: 'photo',
-											elemMods: { size: 'l' },
+											block: 'pyrenees',
 											content: [
 												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/7495f/axERfVn2JpE.jpg'
-												}]
-										},
-										{
-											elem: 'container',
-											elemMods: { align: 'center' },
-											content: [
-												{
-													block: 'text',
-													attrs: { style: 'font-size:10px' },
-													mods: { view: 'primary', align: 'center', transform: 'uppercase', weight: 'bold' },
-													content: "Отец"
+													elem: 'photo',
+													elemMods: { size: 'l' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/7495f/axERfVn2JpE.jpg'
+														}]
 												},
 												{
-													block: 'text',
-													mods: { size: 'xl', align: 'center', weight: 'semibold' },
-													content: "Атлант"
-												},
-												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'container',
+													elemMods: { align: 'center' },
+													content: [
+														{
+															block: 'text',
+															attrs: { style: 'font-size:10px' },
+															mods: { view: 'primary', align: 'center', transform: 'uppercase', weight: 'bold' },
+															content: "Отец"
+														},
+														{
+															block: 'text',
+															mods: { size: 'xl', align: 'center', weight: 'semibold' },
+															content: "Атлант"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
 											]
-										}
-									]
-								},
-								{
-									block: 'pyrenees',
-									content: [
-										{
-											elem: 'photo',
-											elemMods: { size: 'l' },
-											content: [
-												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
-												}]
 										},
 										{
-											elem: 'container',
+											block: 'pyrenees',
 											content: [
 												{
-													block: 'text',
-													attrs: { style: 'font-size:10px' },
-													mods: { view: 'primary', align: 'center', transform: 'uppercase', weight: 'bold' },
-													content: "Мать"
+													elem: 'photo',
+													elemMods: { size: 'l' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
+														}]
 												},
 												{
-													block: 'text',
-													mods: { size: 'xl', align: 'center', weight: 'semibold' },
-													content: "Глория"
-												},
-												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'container',
+													content: [
+														{
+															block: 'text',
+															attrs: { style: 'font-size:10px' },
+															mods: { view: 'primary', align: 'center', transform: 'uppercase', weight: 'bold' },
+															content: "Мать"
+														},
+														{
+															block: 'text',
+															mods: { size: 'xl', align: 'center', weight: 'semibold' },
+															content: "Глория"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
 											]
 										}
@@ -155,113 +161,124 @@ module.exports = {
 						{
 							elem: 'container',
 							elemMods: { size: 'm', align: 'center' },
+							
+							
+							
+							
 							content: [
 								{
-									block: 'pyrenees',
+									elem: 'content',
+									attrs: {style:'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);'},
 									content: [
 										{
-											elem: 'photo',
-											elemMods: { size: 'm' },
+											block: 'pyrenees',
 											content: [
 												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/7495f/axERfVn2JpE.jpg'
-												}]
-										},
-										{
-											elem: 'container',
-											elemMods: { align: 'center' },
-											content: [
-
+													elem: 'photo',
+													elemMods: { size: 'm' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/7495f/axERfVn2JpE.jpg'
+														}]
+												},
 												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'container',
+													elemMods: { align: 'center' },
+													content: [
+		
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
 											]
-										}
-									]
-								},
-								{
-									block: 'pyrenees',
-									content: [
-										{
-											elem: 'photo',
-											elemMods: { size: 'm' },
-											content: [
-												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
-												}]
 										},
 										{
-											elem: 'container',
+											block: 'pyrenees',
 											content: [
-
 												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'photo',
+													elemMods: { size: 'm' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
+														}]
+												},
+												{
+													elem: 'container',
+													content: [
+		
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
+		
 											]
-										}
-
-									]
-								},
-								{
-									block: 'pyrenees',
-									content: [
-										{
-											elem: 'photo',
-											elemMods: { size: 'm' },
-											content: [
-												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
-												}]
 										},
 										{
-											elem: 'container',
+											block: 'pyrenees',
 											content: [
-
 												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'photo',
+													elemMods: { size: 'm' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
+														}]
+												},
+												{
+													elem: 'container',
+													content: [
+		
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
+		
 											]
-										}
-
-									]
-								},
-								{
-									block: 'pyrenees',
-									content: [
-										{
-											elem: 'photo',
-											elemMods: { size: 'm' },
-											content: [
-												{
-													block: 'image',
-													url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
-												}]
 										},
 										{
-											elem: 'container',
+											block: 'pyrenees',
 											content: [
-
 												{
-													block: 'text',
-													mods: { size: 'm', align: 'center', view: 'ghost' },
-													content: "Чемпион России"
+													elem: 'photo',
+													elemMods: { size: 'm' },
+													content: [
+														{
+															block: 'image',
+															url: 'https://pp.userapi.com/c850036/v850036807/74958/tLM_Z_dRFpI.jpg'
+														}]
+												},
+												{
+													elem: 'container',
+													content: [
+		
+														{
+															block: 'text',
+															mods: { size: 'm', align: 'center', view: 'ghost' },
+															content: "Чемпион России"
+														}
+													]
 												}
+		
 											]
 										}
-
+		
+		
 									]
+
 								}
-
-
 							]
 						}
 					]
