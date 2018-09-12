@@ -933,6 +933,7 @@ module.exports = {
 					content: [
 						{
 						elem: 'container',
+						elemMods: { size: 'm', align: 'center'},
 						content: [
 							{
 								elem: 'container',
@@ -959,7 +960,6 @@ module.exports = {
 									
 									{
 										block: 'paragraph',
-										attrs: {style:'width 700px;'},
 										content:[
 											{
 												block: 'text',
