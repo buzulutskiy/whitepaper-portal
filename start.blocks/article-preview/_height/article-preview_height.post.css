@@ -1,0 +1,9 @@
+.article-preview {
+	&_height_s {
+		min-height: 350px;
+	}
+	&_height_m {
+		min-height: 420px;
+	}
+	
+}

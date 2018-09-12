@@ -58,8 +58,8 @@ module.exports = {
 							content: [
 								{
 									elem: 'content',
-									attrs: {style:'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);'},
-									content:[
+									attrs: { style: 'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);' },
+									content: [
 										{
 											block: 'pyrenees',
 											content: [
@@ -161,14 +161,14 @@ module.exports = {
 						{
 							elem: 'container',
 							elemMods: { size: 'm', align: 'center' },
-							
-							
-							
-							
+
+
+
+
 							content: [
 								{
 									elem: 'content',
-									attrs: {style:'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);'},
+									attrs: { style: 'display: inline-block;position: relative;left: 50%;transform: translateX(-50%);' },
 									content: [
 										{
 											block: 'pyrenees',
@@ -186,7 +186,7 @@ module.exports = {
 													elem: 'container',
 													elemMods: { align: 'center' },
 													content: [
-		
+
 														{
 															block: 'text',
 															mods: { size: 'm', align: 'center', view: 'ghost' },
@@ -211,7 +211,7 @@ module.exports = {
 												{
 													elem: 'container',
 													content: [
-		
+
 														{
 															block: 'text',
 															mods: { size: 'm', align: 'center', view: 'ghost' },
@@ -219,7 +219,7 @@ module.exports = {
 														}
 													]
 												}
-		
+
 											]
 										},
 										{
@@ -237,7 +237,7 @@ module.exports = {
 												{
 													elem: 'container',
 													content: [
-		
+
 														{
 															block: 'text',
 															mods: { size: 'm', align: 'center', view: 'ghost' },
@@ -245,7 +245,7 @@ module.exports = {
 														}
 													]
 												}
-		
+
 											]
 										},
 										{
@@ -263,7 +263,7 @@ module.exports = {
 												{
 													elem: 'container',
 													content: [
-		
+
 														{
 															block: 'text',
 															mods: { size: 'm', align: 'center', view: 'ghost' },
@@ -271,11 +271,11 @@ module.exports = {
 														}
 													]
 												}
-		
+
 											]
 										}
-		
-		
+
+
 									]
 
 								}
@@ -318,13 +318,13 @@ module.exports = {
 		},
 
 		// Статьи
-		
+
 		{
 			block: 'tpl-layout',
 			content: [
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+					mix: { block: 'decorator', mods: { 'space-t': 'xxxxxxl' } },
 					content: [
 						{
 							elem: 'container',
@@ -337,59 +337,660 @@ module.exports = {
 									block: 'tpl-grid',
 									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
 									content: [
+
 										{
 											elem: 'fraction',
-											elemMods: { col: '4'},
+											elemMods: { col: '6' },
 											content: [
 												{
 													block: 'article-preview',
+													mods: { height: 's' },
 													mix: [
-														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-														{ block: 'component', mods: { whitepaper: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' } },
+														{ block: 'component', mods: { whitepaper: 'inverse' } },
 														{ block: 'pt-card' }
 													],
 													content: [
 														{
 															elem: 'footer-wrapper',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' } },
 															content: [
 																{
 																	elem: 'footer',
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'center'},
-																			content: 'История породы'
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'left' },
+																			content: 'Год из жизни Оберона'
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'm', align: 'center'},
-																			content: 'Где она была выведена и почему была королевской собакой'
+																			mods: { view: 'primary', size: 'm', align: 'left' },
+																			content: 'Фильм от нашего покупателя'
 																		},
-								
+
 																	]
 																}
 															]
 														},
 														{
 															block: 'image',
-															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															url: 'https://avatars.mds.yandex.net/get-pdb/199965/12a0fd5f-e89f-4c2e-b496-6a027f11fbff/orig'
+														},
+														{
+															elem: 'play',
+															content: [
+																{
+																	block: 'image',
+																	mix: { block: 'pt-card', elem: 'play', },
+
+																}
+															]
+														}
+													]
+												}
+
+
+											]
+										},
+
+										{
+											elem: 'fraction',
+											elemMods: { col: '6' },
+											content: [
+												{
+													block: 'article-preview',
+													mods: { height: 's' },
+													mix: [
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' } },
+														{ block: 'component', mods: { whitepaper: 'inverse' } },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' } },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'left' },
+																			content: 'О питомнике'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm', align: 'left' },
+																			content: 'Как мы выращиваем настоящих пиренеев'
+																		},
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
 															url: 'https://pp.userapi.com/c846420/v846420096/e716c/UMHF3EvK7ww.jpg'
 														}
 													]
 												}
 
-												
+
+											]
+										},
+									]
+								},
+								{
+									block: 'tpl-grid',
+									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
+									content: [
+										{
+											elem: 'fraction',
+											elemMods: { col: '4' },
+											content: [
+												{
+													block: 'article-preview',
+													mods: { height: 'm' },
+													mix: [
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' } },
+														{ block: 'component', mods: { whitepaper: 'inverse' } },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' } },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'center' },
+																			content: 'История породы'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm', align: 'center' },
+																			content: 'Где она была выведена и почему была королевской собакой'
+																		},
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															url: 'https://pp.userapi.com/c846420/v846420096/e716c/UMHF3EvK7ww.jpg'
+														}
+													]
+												}
+
+
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4' },
+
+											content: [
+												{
+													block: 'article-preview',
+													mods: { height: 'm' },
+													mix: [
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' } },
+														{ block: 'component', mods: { whitepaper: 'inverse' } },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' } },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'center' },
+																			content: 'Как выбрать щенка'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm', align: 'center' },
+																			content: 'На что следует обращать внимание в первую очередь'
+																		},
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															url: 'https://pp.userapi.com/c846420/v846420096/e716c/UMHF3EvK7ww.jpg'
+														}
+													]
+												}
+
+
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4' },
+											content: [
+												{
+													block: 'article-preview',
+													mods: { height: 'm' },
+													mix: [
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' } },
+														{ block: 'component', mods: { whitepaper: 'inverse' } },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' } },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'semibold', align: 'center' },
+																			content: 'Пинерейский характер'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm', align: 'center' },
+																			content: 'Особенности характера и дрессировки'
+																		},
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															url: 'https://pp.userapi.com/c846420/v846420096/e716c/UMHF3EvK7ww.jpg'
+														}
+													]
+												}
+
+
 											]
 										}
 									]
 								}
 							]
 
+						},
+
+						{
+							block: 'link',
+							content: [
+								{
+									block: 'text',
+									content: 'Все статьи'
+								}
+							]
+
+						}
+					]
+				},
+
+				{
+					elem: 'section',
+					content: [
+						{
+							elem: 'container',
+							elemMods: { align: 'center' },
+							attrs: {
+								'style': 'width: 1008px;'
+							},
+							content: [
+								{
+									elem: 'container',
+									attrs: { style: 'padding: 64px 0; width: 547px;' },
+									elemMods: { size: 'xs', align: 'center' },
+									content: [
+										{
+											block: 'text',
+											mods: { size: 'xl', view: 'primary', align: 'center', },
+											content: 'Счастливые владельцы',
+										}
+									]
+								},
+								{
+									block: 'tpl-grid',
+									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
+									content: [
+										{
+											elem: 'fraction',
+											elemMods: { col: '3' },
+											content: [
+												{
+													block: 'instagram',
+													mix: [
+														{ block: 'theme', },
+														{ block: 'component', },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer' },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					content: [
+																						{
+																							block: 'avatar',
+																							content: [
+																								{
+																									elem: 'photo',
+																									elemMods: { size: 's' },
+																									content: [
+																										{
+																											block: 'image',
+																											mix: { block: 'pt-card', elem: 'image', },
+																											url: 'https://pp.userapi.com/c830208/v830208641/191b03/rOdFpMxWhu4.jpg'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							mix: { block: 'decorator', mods: { 'space-b': 'xs' } },
+																							content: "@queenmarkers"
+																						},
+																					]
+																				}
+																			]
+																		}
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', },
+															url: 'https://pp.userapi.com/c830208/v830208641/191ae9/xQ8YoE1TARo.jpg'
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '3' },
+											content: [
+												{
+													block: 'instagram',
+													mix: [
+														{ block: 'theme', },
+														{ block: 'component', },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer' },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					content: [
+																						{
+																							block: 'avatar',
+																							content: [
+																								{
+																									elem: 'photo',
+																									elemMods: { size: 's' },
+																									content: [
+																										{
+																											block: 'image',
+																											mix: { block: 'pt-card', elem: 'image', },
+																											url: 'https://pp.userapi.com/c830208/v830208641/191b03/rOdFpMxWhu4.jpg'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							mix: { block: 'decorator', mods: { 'space-b': 'xs' } },
+																							content: "@queenmarkers"
+																						},
+																					]
+																				}
+																			]
+																		}
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', },
+															url: 'https://pp.userapi.com/c830208/v830208641/191ae9/xQ8YoE1TARo.jpg'
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '3' },
+											content: [
+												{
+													block: 'instagram',
+													mix: [
+														{ block: 'theme', },
+														{ block: 'component', },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer' },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					content: [
+																						{
+																							block: 'avatar',
+																							content: [
+																								{
+																									elem: 'photo',
+																									elemMods: { size: 's' },
+																									content: [
+																										{
+																											block: 'image',
+																											mix: { block: 'pt-card', elem: 'image', },
+																											url: 'https://pp.userapi.com/c830208/v830208641/191b03/rOdFpMxWhu4.jpg'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							mix: { block: 'decorator', mods: { 'space-b': 'xs' } },
+																							content: "@queenmarkers"
+																						},
+																					]
+																				}
+																			]
+																		}
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', },
+															url: 'https://pp.userapi.com/c830208/v830208641/191ae9/xQ8YoE1TARo.jpg'
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '3' },
+											content: [
+												{
+													block: 'instagram',
+													mix: [
+														{ block: 'theme', },
+														{ block: 'component', },
+														{ block: 'pt-card' }
+													],
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer' },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					content: [
+																						{
+																							block: 'avatar',
+																							content: [
+																								{
+																									elem: 'photo',
+																									elemMods: { size: 's' },
+																									content: [
+																										{
+																											block: 'image',
+																											mix: { block: 'pt-card', elem: 'image', },
+																											url: 'https://pp.userapi.com/c830208/v830208641/191b03/rOdFpMxWhu4.jpg'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							mix: { block: 'decorator', mods: { 'space-b': 'xs' } },
+																							content: "@queenmarkers"
+																						},
+																					]
+																				}
+																			]
+																		}
+
+																	]
+																}
+															]
+														},
+														{
+															block: 'image',
+															mix: { block: 'pt-card', elem: 'image', },
+															url: 'https://pp.userapi.com/c830208/v830208641/191ae9/xQ8YoE1TARo.jpg'
+														}
+													]
+												}
+											]
+										},
+										
+									]
+								}
+							]
+						},
+
+					]
+				},
+				{
+					elem: 'section',
+					attrs: {style:'background:#F3F3F3;'},
+					content: [
+						{
+						elem: 'container',
+						content: [
+							{
+								elem: 'container',
+								attrs: { style: 'padding: 64px 0; width: 547px;' },
+								elemMods: { size: 'xs', align: 'center' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary', align: 'center', },
+										content: 'Вопросы и ответы',
+									}
+
+								]
+							},
+							{
+								block: 'question',
+								mods: {view: 'open'},
+								mix: {block: 'pt-list'},
+								content: [
+									{
+										block: 'text',
+										content: 'Агрессивны ли пинерейцы?'
+									},
+									
+									{
+										block: 'paragraph',
+										attrs: {style:'width 700px;'},
+										content:[
+											{
+												block: 'text',
+												content: 'Согласно официальному стандарту породы, агрессивность считается пороком, и такие собаки подлежат выбраковке.'
+											},
+											{
+												block: 'text',
+												content: 'В Северо-Западном регионе России в последние несколько лет сложилось поголовье пиренейских горных собак с серьёзными отклонениями в поведении. От их владельцев нарастает поток жалоб на опасное поведение собак, это очень тревожно. Будьте внимательны, приобретая щенка в питерских питомниках.'
+											},
+											{
+												block: 'text',
+												content: 'Обращайте внимание на выражение глаз, которое напрямую связано с характером собаки. Если нет правильного "пиренейского выражения", то и пиренейского поведения ждать не стоит. Настоящие представители породы - добрые собаки, они сторожат только на своей территории, а за пределами участка ведут себя нейтрально по отношению к людям и животным.'
+											}
+										]
+										
+									}
+								
+									
+								]
+							},
+							{
+								elem: 'footer',
+								content: []
+							}
+
+						]
 						}
 					]
 				}
 			]
+
 		}
 
 	]
