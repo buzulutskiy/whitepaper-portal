@@ -21,7 +21,8 @@ block('menu-zuriona')(
                     content: [
                         {
                             block: 'text',
-                            mods: { size: 'l', view: 'disable' },
+                            mods: { size: 'l', view: 'primary', },
+                            mix: { block: 'menu-zuriona', elem: 'item', elemMods: { view: 'link' }, },
                             content: 'Щенки'
 
                         },

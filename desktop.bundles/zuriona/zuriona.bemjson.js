@@ -30,6 +30,7 @@ module.exports = {
 			content: [
 				{
 					block: 'menu-zuriona',
+					attrs: { style: 'postion:relative' },
 				},
 				{
 					elem: 'section',

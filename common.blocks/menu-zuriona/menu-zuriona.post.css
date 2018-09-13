@@ -1,11 +1,12 @@
 .menu-zuriona {
 	height: 75px;
 	box-sizing: border-box;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	top: 0;
-    z-index: 100;
-    position: relative;
+    z-index: 999999;
+    background: #000000;
+    
     
 
     &__container {
@@ -30,7 +31,7 @@
     
     &__item {
         position: relative;
-        margin-left: var(--space-xxl);
+        margin-left: var(--space-xl);
         
         
         &_view {
@@ -38,10 +39,10 @@
 				display: block;
 				text-decoration: none;
                 transition: color .15s;
-                border-bottom:1px solid #B3B3B3;
+                border-bottom: 1px solid rgb(255,255,255,0.2);
                 &:hover {
-                    color: var(--color-typo-disable);
-                    border-bottom:1px solid #FFFFFF;
+                    color: rgb(255,255,255,0.9);
+                    border-bottom: 1px solid rgb(255,255,255,0.0);
                     cursor: default;
                 }
 			}
