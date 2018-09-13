@@ -1,7 +1,31 @@
 .pyrenees {
-	display: inline-block;
-	position: relative;
-	margin: var(--space-m);
+	box-sizing: border-box;
+	
+	
+	&__image {
+		
+		transition: 0.4s;
+		height: 309px;
+		&:hover {
+			
+			transition: 0.4s;
+			box-shadow: 0px 20px 250px rgba(255, 255, 255, 0.34);
+			cursor: pointer;
+			
+		}
+	}
+	
+	&__link {
+		font-family: Baskerville;
+		border-bottom: 1px solid rgb(255,255,255,0.2);
+		display: inline-block;
+		
+		&:hover{
+			border-bottom: 1px solid rgb(255,255,255,0.0);
+			cursor: pointer;
+		}
+	}
+
 	
 	
 

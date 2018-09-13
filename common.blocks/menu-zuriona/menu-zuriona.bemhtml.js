@@ -3,6 +3,7 @@ block('menu-zuriona')(
         return {
             elem: 'container',
             mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }, },
+            attrs: { style: 'width:1024px;' },
             content: [
                 {
                     elem: 'logo',

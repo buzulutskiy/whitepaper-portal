@@ -15,7 +15,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+			mods: { color: 'whitepaper-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 		},
 		{
 			block: 'component',
@@ -25,27 +25,309 @@ module.exports = {
 	content: [
 		{
 			block: 'tpl-layout',
-			attrs: { style: 'background: #EDF3F1' },
+			attrs: { style: 'background: #000000; ' },
 
 			content: [
 				{
 					block: 'menu-zuriona',
-					attrs: { style: 'position: relative' },
 				},
 				{
 					elem: 'section',
 					content: [
 						{
 							elem: 'container',
-							attrs: { style: 'padding: 64px 0; ' },
-							elemMods: { size: 'xs', align: 'center' },
+							elemMods: {  align: 'center' },
+							attrs: { style: 'width:1024px;' },
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'semibold' },
-									content: 'В нашем питомнике растут щенки от прекрасной пары пиренейских горных собак',
+									mix: {block:'headline'},
+									mods: { size: 'xxxxl', view: 'primary', align: 'left'},
+									content: 'Продаем великолепных щенков пиренейской горной собаки',
 								}
 							]
+						}
+					]
+				},
+				{
+					block: 'image',
+					width: '100%',
+					url: 'https://sun6-1.userapi.com/c830708/v830708363/191db0/LxGbJxZCj5w.jpg'
+				},
+				{
+					elem: 'section',
+					content: [
+						{
+							elem: 'container',
+							elemMods: {align: 'center' },
+							mix: { block: 'decorator', mods: { 'space-t': 'xxxxxxl'} },
+							attrs: { style: 'width:1024px;' },
+							content: [
+								{
+									block: 'tpl-grid',
+									mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full' },
+									content: [
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxxxxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'tpl-grid',
+									mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full' },
+									content: [
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'pyrenees',
+													mix: {block:'pt-card'},
+													content: [
+														{
+															elem: 'image',
+															content: [
+																{
+																	block: 'image',
+																	width: '100%',
+																	url:'https://sun6-4.userapi.com/c830708/v830708363/191dbe/gCU93xykyZ8.jpg'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															mix: { block: 'decorator', mods: { 'indent-t': 'xxl','indent-b':'xxl' } },
+															content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'l',  align: 'left'},
+																			content: 'Девочка'
+																		},
+																		{
+																			block: 'text',
+																			mix: {block: 'pyrenees', elem:'link'},
+																			mods: { view: 'primary', size: 'xxxl', align: 'left', font:'Baskerville'},
+																			content: 'Чарис Грейт'
+																		},
+							
+															]
+														},
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'section',
+					attrs: { style: 'border-top: 1px #fafafa; border-bottom: 1px #fafafa' },
+					content: [
+						{
+						elem: 'container',
+							elemMods: {align: 'center' },
+							mix: { block: 'decorator', mods: { 'space-t': 'xxxxxxl'} },
+							
 						}
 					]
 				},
