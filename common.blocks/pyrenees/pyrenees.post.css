@@ -5,23 +5,18 @@
 		cursor: pointer;
 		.pyrenees__image {
 			transition: 0.4s;
-			box-shadow: 0px 20px 250px rgba(255, 255, 255, 0.34);
-			
+			box-shadow: 0px 20px 250px rgba(255, 255, 255, 0.34);		
 		}
 
 		.pyrenees__link
 		{
 			border-bottom: 1px solid rgb(255,255,255,0.0);
-			
 		}
 
 	}
-
 	&__image {
-		
 		transition: 0.4s;
 		height: 309px;
-		
 	}
 	
 	&__link {
@@ -29,8 +24,4 @@
 		border-bottom: 1px solid rgb(255,255,255,0.2);
 		display: inline-block;
 	}
-
-	
-	
-
 }
